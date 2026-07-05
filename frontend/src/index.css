@@ -1,0 +1,48 @@
+/* Reset all default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make the app take the full screen */
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Default body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove list bullets */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Better button defaults */
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
