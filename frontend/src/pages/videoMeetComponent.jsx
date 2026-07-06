@@ -14,7 +14,7 @@ import ChatIcon from '@mui/icons-material/Chat'
 // import server from '../environment';
 import { useParams } from "react-router-dom";
 
-const { id } = useParams();
+
 const server_url = import.meta.env.VITE_SERVER_URL;
 
 var connections = {};
@@ -26,6 +26,7 @@ const peerConfigConnections = {
 }
 
 export default function VideoMeetComponent() {
+    const { id } = useParams();
 
     var socketRef = useRef();
     let socketIdRef = useRef();
