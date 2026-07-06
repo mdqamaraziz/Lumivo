@@ -12,7 +12,9 @@ import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare'
 import ChatIcon from '@mui/icons-material/Chat'
 // import server from '../environment';
+import { useParams } from "react-router-dom";
 
+const { id } = useParams();
 const server_url = import.meta.env.VITE_SERVER_URL;
 
 var connections = {};
